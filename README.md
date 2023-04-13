@@ -18,27 +18,27 @@ We're using rollup to bundle our library and publish it to GitHub.
 
 ## Available Scripts:
 
-Build the library
+### Build the library
 ```
 npm run rollup
 ```
 
-Publish the library
+### Publish the library
 ```
 npm publish
 ```
 
-Run tests
+### Run tests
 ```
 npm run test
 ```
 
-Run storybook locally
+### Run storybook locally
 ```
 npm run storybook
 ```
 
-Build storybook
+### Build storybook
 ```
 npm run build-storybook
 ```
