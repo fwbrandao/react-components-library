@@ -16,7 +16,7 @@ npm run storybook
 
 We're using rollup to bundle our library and publish it to GitHub. 
 
-Available Scripts:
+## Available Scripts:
 
 Build the library
 ```
