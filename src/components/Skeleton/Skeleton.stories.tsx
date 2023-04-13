@@ -15,5 +15,6 @@ type Story = StoryObj<typeof SkeletonElement>;
 export const Skeleton: Story = {
   args: {
     elementType: "title",
+    theme: "light"
   },
 };
