@@ -3,7 +3,7 @@
 Custom components library
 
 This library is publicly available, and it can be installed using npm.
-npm install @fwbrandao/react-components-library
+<code>npm install @fwbrandao/react-components-library<code>
 
 This project uses Storybook. To see the components in the browser, run:
 npm run storybook 
