@@ -4,6 +4,6 @@ import SkeletonElement from "./SkeletonElement";
 
 describe("Skeleton", () => {
   it("renders the skeleton component", () => {
-    render(<SkeletonElement elementType="text"/>);
+    render(<SkeletonElement elementType="text" theme={"light"}/>);
   });
 });

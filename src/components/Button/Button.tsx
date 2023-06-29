@@ -6,7 +6,7 @@ interface ButtonProps {
   /**
    * How large should the button be?
    */
-  size?: "small" | "medium" | "large";
+  size: "small" | "medium" | "large";
   /**
    * Button contents
    */
@@ -42,7 +42,7 @@ const getSizeStyles = ({ size = 'medium' }) => {
 
 const Button = ({
   size = "medium",
-  label,
+  label = "",
   ...props
 }: ButtonProps) => {
   return (
@@ -62,26 +62,5 @@ const StyledButton = styled.button<{ size: string }>`
 
   ${(props) => getSizeStyles({size: props.size})}
 `;
-
-Button.propTypes = {
-  /**
-   * How large should the button be?
-   */
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
-  /**
-   * Button contents
-   */
-  label: PropTypes.string.isRequired,
-  /**
-   * Optional click handler
-   */
-  onClick: PropTypes.func,
-};
-
-Button.defaultProps = {
-  size: 'medium',
-  label: "Button",
-  onClick: undefined,
-};
 
 export default Button;

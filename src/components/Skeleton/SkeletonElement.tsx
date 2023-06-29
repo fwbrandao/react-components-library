@@ -60,7 +60,7 @@ const getSkeletonTheme = ({ theme = "" }) => {
   }
 };
 
-const SkeletonElement = ({ elementType, theme }: SkeletonProps) => {
+const SkeletonElement = ({ elementType="text", theme="light" }: SkeletonProps) => {
   return (
     <StyledSkeletonWrapper theme={theme}>
       <StyledSkeletonElement elementType={elementType} theme={theme} />
@@ -113,21 +113,5 @@ const StyledShimmer = styled.div<{ theme: string }>`
   transform: skewX(-20deg);
   box-shadow: 0 0 30px 30px rgba(255, 255, 255, 0.05);
 `;
-
-SkeletonElement.propTypes = {
-  /**
-   * The type of the skeleton element e.g. avatar, title ...
-   */
-  elementType: PropTypes.oneOf(["text", "title", "avatar", "thumbnail"]),
-  /**
-   * The theme of the site to be used e.g. dark, light.
-   */
-  theme: PropTypes.oneOf(["light", "dark"]),
-};
-
-SkeletonElement.defaultProps = {
-  elementType: "",
-  theme: "light",
-};
 
 export default SkeletonElement;
